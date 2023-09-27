@@ -16,7 +16,7 @@
         <input type="text" name="name" value="{{ $user->name }}">
         <input type="text" name="email" value="{{ $user->email }}">
         <input type="text" name="password" value="{{ $user->password }}">
-        <button type="submit">Save</button>
+        <button type="submit">Update</button>
     </div>
 </form>
 <a class="back" href="{{ route('users.index') }}">Back</a>
