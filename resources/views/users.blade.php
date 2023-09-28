@@ -2,17 +2,16 @@
 
 @section('content')
 
-<a href="{{ route('users.create') }}">Create User</a>
+<a class="create-link" href="{{ route('users.create') }}">Create User</a>
 <hr>
 <h2>Users</h2>
 
-<ul>
+<ul class="user-list">
     @foreach ($users as $user)
-    <li>{{ $user->name }} | <a href="{{ route('users.edit', ['user' => $user->id]) }}">Edit</a> | <a href="">Delete</a></li>
+    <li>{{ $user->name }} | <a href="{{ route('users.edit', ['user' => $user->id]) }}">Edit</a> | <a href="{{ route('users.show', ['user' => $user->id]) }}">Show</a></li>
     @endforeach
-    <li></li>
 </ul>
-<a class="back" href="{{ route('home') }}">Back</a>
+<a class="back-link" href="{{ route('home') }}">Home</a>
 
 
 @endsection

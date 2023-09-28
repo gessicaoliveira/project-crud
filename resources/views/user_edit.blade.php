@@ -11,7 +11,7 @@
 
 <form action="{{ route('users.update', ['user' => $user->id]) }}" method="post">
     @csrf
-    <div class="edit-user">
+    <div class="user-edit">
         <input type="hidden" name="_method" value="PUT">
         <input type="text" name="name" value="{{ $user->name }}">
         <input type="text" name="email" value="{{ $user->email }}">
@@ -19,7 +19,7 @@
         <button type="submit">Update</button>
     </div>
 </form>
-<a class="back" href="{{ route('users.index') }}">Back</a>
+<a class="back-link" href="{{ route('users.index') }}">User List</a>
 
 
 @endsection

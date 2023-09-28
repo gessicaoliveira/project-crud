@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100&display=swap');
 
-body {
+* {
     font-family: 'Martian Mono', monospace;
+    box-sizing: border-box;
+    /*border: 2px solid #000;*/
 }
 
 .container {
-    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 5.5rem;
+}
+
+.user-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
+    align-items: center;
 }
 
 h2 {
@@ -29,30 +36,41 @@ li {
     text-align: center;
 }
 
-.user {
+.user-link {
     margin-top: 5.5rem;
     text-align: center;
     font-size: larger;
 }
 
-.back {
+.back-link {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: larger;
+}
+
+.create-link {
     margin-top: 1.5rem;
     text-align: center;
     font-size: larger;
 }
 
-.edit-user {
+.user-edit {
     margin-top: 1.5rem;
 }
 
-.edit-user input {
+.user-edit input {
     font-family: 'Martian Mono', monospace;
     font-size: medium;
 }
 
-.edit-user button {
+.user-edit button {
     font-family: 'Martian Mono', monospace;
     font-size: medium;
+}
+
+.delete-btn {
+    font-size: medium;
+    margin-top: 1.5rem;
 }
 
 
